@@ -1,0 +1,32 @@
+.as-home{
+	.as-homeTitle{
+		font-size: 22px;
+  	text-align: center;
+	}
+	.last-results{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+  	border-bottom: 1px solid #F2F2F2;
+		.last-results-teams{
+			width: 30%;
+			float: left;
+		}
+		.last-results-value{
+			width: 40%;
+			float: left;
+			padding-top: 22px;
+			span{
+				font-size: 50px;
+			}
+		}
+		.last-results-data-camp{
+			width: 100%;
+			color: #C3C3C3;
+		  display: inline-block;
+		  padding-top: 10px;
+		}
+	}
+}

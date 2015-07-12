@@ -1,0 +1,15 @@
+<ion-view title="Notícias">
+	<ion-content class="scroll-content has-header has-tabs-top padding" has-tabs="true">
+	  
+	  <h1>notícias</h1>	
+	  
+    
+    <ion-list>
+      <a class="item item-thumbnail-left item-text-wrap" ng-repeat="notice in notices" stories="stories" href="{{story.url}}" terget="_blank">
+      	<img ng-src="{{notice.thumbnail}}">
+        {{notice.titulo}}
+      </a>
+    </ion-list>
+
+	</ion-content>
+</ion-view>

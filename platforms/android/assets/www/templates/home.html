@@ -1,0 +1,58 @@
+<ion-view cache-view="false" title="Início">
+	<ion-content class="scroll-content has-header has-tabs-top padding" has-tabs="true">
+	  	
+		<div class="as-home padding">
+      <h1 class="as-homeTitle">Última Partida</h1>
+
+
+      <div class="last-results">
+        
+        <div class="last-results-teams">
+          <img src="{{last_game.anterior.mandante.escudo.grande}}" alt="">
+          <p>{{last_game.anterior.mandante.apelido}}</p>
+        </div>
+
+        <div class="last-results-value">
+          <span>{{last_game.anterior.mandante.placar_oficial}}</span>
+          <span>-</span>
+          <span>{{last_game.anterior.visitante.placar_oficial}}</span>
+        </div>
+
+        <div class="last-results-teams">
+          <img src="{{last_game.anterior.visitante.escudo.grande}}" alt="">
+          <p>{{last_game.anterior.visitante.apelido}}</p>
+        </div>
+        
+        <div class="last-results-data-camp">
+          <span>{{last_game.anterior.datajogo | date : 'dd/MM/yyyy'}} |</span>
+          <span>{{last_game.anterior.estadio}}</span>
+        </div>
+
+      </div>
+
+      <!-- <div ng-repeat="new in last_game" class="last-results">
+        <div class="last-results-teams">
+           <img src="{{new.mandante.escudo.grande}}" alt="">
+           <p>{{last_game.mandante.apelido}}</p>
+        </div>
+
+        <div class="last-results-value">
+          <p><span>{{last_game.mandante.placar_oficial}}</span>  <span>{{last_game.visitante.placar_oficial}}</span></p>
+        </div>
+
+        <div class="last-results-teams">
+          <img src="{{last_game.visitante.escudo.grande}}" alt="">
+          <p>{{last_game.visitante.apelido}}</p>
+        </div>
+      </div> -->
+
+      <!-- <h1>Próximo</h1>
+      <div ng-repeat="last_game in nexts_games">
+        {{last_game.dia}}
+      </div>   -->
+
+      
+    </div>
+
+	</ion-content>
+</ion-view>
